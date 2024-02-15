@@ -35,8 +35,17 @@ body {
     /* background-color: #546e7d;
     background-color: #FAFAFA; */
     background-color: #e8eef3;
-    
+    /* overflow-y: hidden; */
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+/* body {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+} */
 .body-container{
     margin-top: 104px;
     box-sizing: border-box;
@@ -146,7 +155,7 @@ body {
     display: inline-block;
     padding-right: 100%; /* Ensure content starts off-screen */
     /* Adjust duration as needed */
-    animation: scrollText 50s linear infinite; 
+    animation: scrollText 60s linear infinite; 
 }
 @keyframes scrollText {
     0% { transform: translateX(100%); }
@@ -566,7 +575,7 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     /* border: 2px solid red; */
     padding: 10px ;
     /* column-gap: 50px; */
-    gap: 25px;
+    gap: 30px;
     /* margin-right: 15px; */
 
 }
@@ -742,7 +751,7 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     align-items: center;
 
     height: 100%;
-    padding: 20px 0 0 0;
+    /* padding: -20px 0 0 0; */
 
 }
 .card-container1-heading{

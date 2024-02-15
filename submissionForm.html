@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribute Notes</title>
+
+    <!-- <link rel="stylesheet" href="styles2.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
+
+</head>
+<body>
+
+    <header>
+
+        <div class="header-container">
+
+            <div class="navbar">
+                <a  class="border" href="./index.html" target="_self">
+                    <div class="nav-logo"></div>
+                </a>
+    
+                <div class="nav-container">
+                    <div class="nav-item border" >
+                        <a href="./index.html" > Home</a>
+                    </div>
+
+                    <div class="nav-item border">
+                        <a href="./aboutUs.html"> About Us</a>
+                    </div>
+
+                    <div class="nav-item border">
+                        <a href="./syllabusPage.html"> Syllabus</a>
+                    </div>
+                    
+                    <div class="nav-item border">
+                        <a href="./pyq.html"> PYQs</a>
+                    </div>
+
+                    <!-- <div class="nav-item border">
+                        <a href="#"> E-Resources</a>
+                    </div> -->
+
+                    <div class="nav-item border">
+                        <a href="./submissionForm.html" id="active"> Contribute</a>
+                    </div>
+
+                    <!-- <div class="nav-item border">
+                        <a href="#"> Contact Us</a>
+                    </div> -->
+
+                    <div class="nav-item border">
+                        <!-- <a href="./loginPage.html"> Login</a> -->
+                        <a target="_blank" href="https://ycceerp.meghegroup.org/login.htm;jsessionid=326B0D8B2201465DDB955A50DCC03A69"> Login</a>
+                    </div>
+
+                </div>
+
+            </div>
+    
+            <div class="notification-panel">
+
+                <div class="notification-content">
+
+                    <ul class="notification-list">
+                        <li >You can submit the Study Material at <mark><a href="./submissionForm.html">Contribution Section</a></mark>.</li>
+                        <li><a href="">Notification 1: Lorem ipsum dolor sit amet.</a></li>
+                        <li><a href="">Notification 2: Lorem ipsum dolor sit amet.</a></li>
+                        <li><a href="">Notification 3: Lorem ipsum dolor sit amet.</a></li>
+                        <li><a href="">Notification 4: Lorem ipsum dolor sit amet.</a></li>
+                        <!-- <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium eos labore quidem culpa, commodi quod temporibus saepe amet. Veritatis maxime excepturi cupiditate magni repellendus deserunt ab nihil, exercitationem ullam, numquam minus, nesciunt possimus dolores! Obcaecati quo quod asperiores corporis harum odio voluptatem quae velit nam, ut debitis, nisi itaque.</a></li> -->
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+    
+
+    <div class="body-container">
+
+        <!-- <div class="main-container"> -->
+        <div class="form-container">
+            <!-- <div class="logo">
+                <a href="www.google.com" target="_blank">
+                    <img src="./Final_2-removebg-preview (1).png" alt="logo">
+                </a>
+            </div> -->
+
+            <form action="#" method="post" enctype="multipart/form-data">    
+                <div class="input-container">
+                    <h2 style="margin-bottom: 20px; text-decoration: underline; font-size: 30px; display: flex; justify-content: center;">Submission Form</h2>
+                </div>
+
+                <div class="form-description">
+                    <p> <strong>NOTE: </strong> You can submit your study material (notes / ppt / pyqs / projects) here.</p>
+                </div>
+
+                <div class="input-container">
+                    <label for="name">Name:<span id="required">*</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="email">Email ID:<span id="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="contact">Contact Number:<span id="required">*</span></label>
+                    <input type="tel" id="contact" name="contact" pattern="\+91 [0-9]{10}" maxlength="14" placeholder="+91- XXXXX XXXX"  value="+91 " required>
+
+                </div>
+
+
+                <div class="input-container">
+                    <label for="batch">Batch:<span id="required">*</span></label>
+                    <input type="number" id="batch" name="batch" placeholder="2024" min="2018" max="2029" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="branch">Branch:<span id="required">*</span></label>
+                    <input type="text" id="branch" name="branch" placeholder="CSE, CT, IT, ETC, EN, EL, ME, CE" required>
+                </div>
+
+                <div id="category-Section" >
+                    <label > Category of File:</label>
+                    <div class="input-container">
+                        <input type="radio" id="notes" name="category" value="Notes" checked>
+                        <label for="notes">Notes</label>
+                    </div>            
+
+                    <div class="input-container">
+                        <input type="radio" id="books" name="category" value="Books">
+                        <label for="books">Books</label>
+                    </div>            
+                
+                    <div class="input-container">
+                        <input type="radio" id="papers" name="category" value="Papers">
+                        <label for="papers">Papers</label>
+                    </div>            
+                
+                    <div class="input-container">
+                        <input type="radio" id="other" name="category" value="Other">
+                        <label for="other">Other</label>
+                    </div>            
+                </div>
+
+                <div class="input-container">
+                        <label for="file">Subject Name:<span id="required">*</span></label>
+                        <input type="text" id="file" name="file" placeholder="(Course Code) - Subject Name" required>
+                </div>            
+
+                <div class="input-container">
+                    <div id="notes-path">
+                        <!-- Input for device upload -->
+                        <label for="file">Semester:<span id="required">*</span></label>
+                        <!-- <input type="text" id="file" name="file" placeholder="Google Drive Link" required> -->
+                        <select name="semester" id="sem">
+                            <option value="1sem">1<sup>st</sup> Semester </option>
+                            <option value="2sem">2<sup>nd</sup> Semester </option>
+                            <option value="3sem">3<sup>rd</sup> Semester </option>
+                            <option value="4sem">4<sup>th</sup> Semester </option>
+                            <option value="5sem">5<sup>th</sup> Semester </option>
+                            <option value="6sem">6<sup>th</sup> Semester </option>
+                            <option value="7sem">7<sup>th</sup> Semester </option>
+                            <option value="8sem">8<sup>th</sup> Semester </option>
+                        </select>
+                    </div>
+                </div>            
+
+                <div class="input-container">
+                    <div id="fileUpload-Section">
+                        <!-- Input for device upload -->
+                        <label for="file">File Upload:<span id="required">*</span></label>
+                        <!-- <input type="file" id="file" name="file" accept=".pdf, .doc, .docx" required> -->
+                        <input type="file" id="file" name="file" accept=".pdf, .doc, .docx" >
+                    </div>
+                </div>       
+
+                <div class="input-container">
+                    <div id="fileUpload-Section">
+                        <!-- Input for device upload -->
+                        <label for="file">File Upload:<span id="required">*</span></label>
+                        <input type="text" id="file" name="file" placeholder="Google Drive Link" >
+                        <!-- <input type="text" id="file" name="file" placeholder="Google Drive Link" required> -->
+                    </div>
+                </div>    
+
+
+
+                <div class="input-container">
+                    <label for="description">Description :</label>
+                    <textarea id="description" name="description" rows="4" placeholder="Description about the file you have selected."></textarea>
+                </div>
+
+
+                <div class="button-container">
+                    <input class="button" type="reset" value="Clear">
+                    <input class="button" type="submit" value="Submit">
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <ul class="footer-list">
+                <li>
+                    <a href="./submissionForm.html" class="footer-link">Contribute</a>
+                </li>
+                <li>
+                    <a href="./contactForm.html" class="footer-link">Contact Us</a>
+                </li>
+                <li>
+                    <a href="./team.html" class="footer-link">Our Team</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; 2024 All right reserved. Made with ❤ by <a href="./team.html">Team 15</a> .
+            </p>
+        </div>
+
+    </footer>
+
+
+
+
+    <!-- <script>
+        // JavaScript to toggle the display of file upload options based on the selected radio button
+        const fileUploadSection = document.getElementById('fileUploadSection');
+        const googleDriveLink = document.getElementById('googleDriveLink');
+        const dropboxLink = document.getElementById('dropboxLink');
+
+        document.querySelectorAll('input[name="uploadOption"]').forEach((radio) => {
+            radio.addEventListener('change', () => {
+                if (radio.value === 'Google Drive') {
+                    googleDriveLink.style.display = 'block';
+                    dropboxLink.style.display = 'none';
+                    document.getElementById('file').style.display = 'none';
+                } else if (radio.value === 'Dropbox') {
+                    dropboxLink.style.display = 'block';
+                    googleDriveLink.style.display = 'none';
+                    document.getElementById('file').style.display = 'none';
+                } else {
+                    document.getElementById('file').style.display = 'block';
+                    googleDriveLink.style.display = 'none';
+                    dropboxLink.style.display = 'none';
+                }
+            });
+        });
+    </script> -->
+
+</body>
+</html>

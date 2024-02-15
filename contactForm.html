@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactForm</title>
+
+    <!-- <link rel="stylesheet" href="styles2.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
+
+</head>
+<body>
+
+    <header>
+
+        <div class="header-container">
+
+            <div class="navbar">
+                <a  class="border" href="./index.html" target="_self">
+                    <div class="nav-logo"></div>
+                </a>
+    
+                <div class="nav-container">
+                    <div class="nav-item border" >
+                        <a href="./index.html"> Home</a>
+                    </div>
+
+                    <div class="nav-item border">
+                        <a href="./aboutUs.html"> About Us</a>
+                    </div>
+
+                    <div class="nav-item border">
+                        <a href="./syllabusPage.html"> Syllabus</a>
+                    </div>
+                    
+                    <div class="nav-item border">
+                        <a href="./pyq.html"> PYQs</a>
+                    </div>
+
+                    <!-- <div class="nav-item border">
+                        <a href="#"> E-Resources</a>
+                    </div> -->
+
+                    <div class="nav-item border">
+                        <a href="./submissionForm.html"> Contribute</a>
+                    </div>
+
+                    <!-- <div class="nav-item border">
+                        <a href="#"> Contact Us</a>
+                    </div> -->
+
+                    <div class="nav-item border">
+                        <!-- <a href="./loginPage.html"> Login</a> -->
+                        <a target="_blank" href="https://ycceerp.meghegroup.org/login.htm;jsessionid=326B0D8B2201465DDB955A50DCC03A69"> Login</a>
+                    </div>
+
+                </div>
+
+            </div>
+    
+            <div class="notification-panel">
+
+                <div class="notification-content">
+
+                    <ul class="notification-list">
+                        <li >You can submit the Study Material at <mark><a href="./submissionForm.html">Contribution Section</a></mark>.</li>
+                        <li><a href="">Notification 1: Lorem ipsum dolor sit amet.</a></li>
+                        <li><a href="">Notification 2: Lorem ipsum dolor sit amet.</a></li>
+                        <li><a href="">Notification 3: Lorem ipsum dolor sit amet.</a></li>
+                        <li><a href="">Notification 4: Lorem ipsum dolor sit amet.</a></li>
+                        <!-- <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium eos labore quidem culpa, commodi quod temporibus saepe amet. Veritatis maxime excepturi cupiditate magni repellendus deserunt ab nihil, exercitationem ullam, numquam minus, nesciunt possimus dolores! Obcaecati quo quod asperiores corporis harum odio voluptatem quae velit nam, ut debitis, nisi itaque.</a></li> -->
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="body-container">
+
+        <div class="form-container">
+
+            <form action="#" method="post" enctype="multipart/form-data">    
+                <div class="input-container">
+                    <h2 style="text-decoration: underline; font-size: 30px; display: flex; justify-content: center; margin-bottom: 20px;">Contact Form</h2>
+                </div>
+    
+                <div class="input-container">
+                    <label for="name">Name:<span id="required">*</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="input-container">
+                    <label for="email">Email ID:<span id="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                </div>
+    
+                <div class="input-container">
+                    <label for="contact">Contact Number:<span id="required">*</span></label>
+                    <input type="tel" id="contact" name="contact" pattern="\+91 [0-9]{10}" maxlength="14" placeholder="+91- XXXXX XXXX"  value="+91 " required>
+                </div>    
+    
+                <div class="input-container-radio">
+                    <label > Are you from YCCE ?</label>
+    
+                    <div class="input-container-radio" >
+                        <!-- <div class="input-container"> -->
+                        <input style="margin-right: 10px;" type="radio" id="yes" name="category" value="Yes">
+                        <label for="yes">Yes</label>
+                    </div>            
+                
+                    <div class="input-container-radio">
+                        <input style="margin-right: 10px;" type="radio" id="no" name="category" value="No">
+                        <label for="no">No</label>
+                    </div>                      
+                </div>
+    
+    
+                <div class="input-container">
+                    <label for="description">Message :</label>
+                    <textarea id="description" name="description" rows="4" placeholder="Describe your query here."></textarea>
+                </div>
+                
+                
+                <div class="button-container">
+                    <input class="button" type="reset" value="Clear">
+                    <input class="button" type="submit" value="Submit">
+                </div>
+                
+            </form>
+        </div>
+
+    </div>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+
+        <ul class="footer-list">
+            <li>
+                <a href="./submissionForm.html" class="footer-link">Contribute</a>
+            </li>
+            <li>
+                <a href="./contactForm.html" class="footer-link" id="active">Contact Us</a>
+            </li>
+            <li>
+                <a href="./team.html" class="footer-link">Our Team</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p class="copyright">
+            &copy; 2024 All right reserved. Made with ❤ by <a href="./team.html">Team 15</a> .
+        </p>
+    </div>
+
+</footer>
+
+
+    <script>
+        // JavaScript to toggle the display of file upload options based on the selected radio button
+        const fileUploadSection = document.getElementById('fileUploadSection');
+        const googleDriveLink = document.getElementById('googleDriveLink');
+        const dropboxLink = document.getElementById('dropboxLink');
+
+        document.querySelectorAll('input[name="uploadOption"]').forEach((radio) => {
+            radio.addEventListener('change', () => {
+                if (radio.value === 'Google Drive') {
+                    googleDriveLink.style.display = 'block';
+                    dropboxLink.style.display = 'none';
+                    document.getElementById('file').style.display = 'none';
+                } else if (radio.value === 'Dropbox') {
+                    dropboxLink.style.display = 'block';
+                    googleDriveLink.style.display = 'none';
+                    document.getElementById('file').style.display = 'none';
+                } else {
+                    document.getElementById('file').style.display = 'block';
+                    googleDriveLink.style.display = 'none';
+                    dropboxLink.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

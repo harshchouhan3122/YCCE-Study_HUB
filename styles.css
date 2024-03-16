@@ -50,7 +50,7 @@ body::-webkit-scrollbar {
     margin-top: 104px;
     box-sizing: border-box;
     /* border: 2px solid red; */
-    padding: 20px 0 20px 0;
+    padding: 20px 10px 20px 10px;
 }
 
 .border{
@@ -637,6 +637,8 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 .card-body p{
     font-size: smaller;
     /* display: none; */
+    text-align: justify;
+    
 }
 /* .card:hover .card-body p{
     display: block;
@@ -851,4 +853,48 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 
 
 
-
+/* ///////////////// ABOUT US ///////////////////// */
+#about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-section{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 20px 0 0 0;
+}
+.body-container h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.about-picture{
+    /* border: 1px solid green; */
+    height: 300px;
+    width: 400px;
+    margin: 10px 20px 20px 0;  
+}
+.about-picture img{
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+}
+.about-description{
+    /* border: 1px solid blue; */
+    height: auto;
+    width: 600px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    
+}
+.about-description p{
+    margin-bottom: 1rem;
+}
